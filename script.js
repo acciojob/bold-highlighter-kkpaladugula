@@ -1,5 +1,13 @@
+var bold_Items;
+window.onload = getBold_items();
+ 
+function getBold_items() {
+    bold_Items = document.getElementsByTagName('strong'); 
+}
+
 function highlight() {
-    //Write your code here
+    for (var i=0; i<bold_Items.length; i++)                                                   
+        bold_Items[i].style.color = "green";
 
 
 }
@@ -7,6 +15,9 @@ function highlight() {
 
 function return_normal() {
     //Write your code here
-
+    for (var i=0; i<bold_Items.length; i++) 
+    bold_Items[i].style.color = "black";
     
 }
+
+
